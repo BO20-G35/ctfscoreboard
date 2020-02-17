@@ -20,7 +20,7 @@ SECRET_KEY = 'CHANGEME CHANGEME CHANGEME'
 # Set TEAM_SECRET_KEY to a unique value so that you can rotate session
 # secrets (SECRET_KEY) without affecting team invite codes.
 TEAM_SECRET_KEY = SECRET_KEY
-TITLE = 'CTF Scoreboard Dev'
+TITLE = 'SIN: IoT Lab'
 TEAMS = True
 ATTACHMENT_BACKEND = 'file:///tmp/attachments'
 LOGIN_METHOD = 'local'
