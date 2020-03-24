@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     supervisor \
     uwsgi \
     uwsgi-plugin-python \
+    libpcre3-dev \
   && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt requirements.txt
@@ -26,3 +27,4 @@ RUN python main.py createdb
 RUN chmod 766 /tmp/scoreboard*
 
 CMD ["/usr/bin/supervisord"]
+
