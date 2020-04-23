@@ -84,6 +84,10 @@ branch, which will only be getting security & bug fixes.
 
        docker start "container_name"
 
+6. Update code
+
+  sudo docker container cp . container_name:/opt/scoreboard && sudo docker container restart container_name 
+
 ### Options ###
 
 **SCORING**: Set to 'progressive' to enable a scoring system where the total
